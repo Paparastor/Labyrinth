@@ -85,6 +85,7 @@ function DrawMap(player,matrix,canvas,rx,ry,pos)
 {
 	if (canvas.getContext)
 	{
+		
 		ctx = canvas.getContext('2d');
 		ctx.fillStyle="black";
 		ctx.fillRect(0,0,field_width,field_width);
@@ -133,6 +134,7 @@ function DrawTile(matrix,canvas,i,j,rx,ry)
 		 	{
 				ctx.drawImage(image,336,64,16,16,i*tile_size,j*tile_size,tile_size,tile_size);
 		 	}
+		 	alert('x = ' + i.toString() + " " + 'y = '+ j.toString() + " " + matrix[i][j]);
 }
 
 function getRandom(min, max)
